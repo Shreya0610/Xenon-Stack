@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/signup.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container" style="padding-top:6%">
+        <div class="title" style="color:red">Signup </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 form-container">
+                <form action="/signup" method="post">
+                    <div class="mb-3">
+                        <label class="col-6 form-label">First Name</label>
+                        <input type="text" name=firstName class="form-control" placeholder="First Name">
+                    </div>
+                    <br />
+                    <div class="mb-3">
+                        <label class="col-6 form-label">Last Name</label>
+                        <input type="text" name=lastName class="form-control" placeholder="Last Name">
+                    </div>
+                    <br />
+                    <div class="mb-3">
+                        <label class="col-6 form-label">Email address</label>
+                        <input type="email" name=textEmail class="form-control" placeholder="Email Address">
+                    </div>
+                    <br />
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-6 form-label" style="padding-left: 15px">Password</div>
+                        </div>
+                        <input type="password" name=textPassword class="form-control" id="changePasswordForm">
+                    </div>
+                    <br>
+                    <button type="submit" value="signup" id="click" class="btn btn-success btn-lg btn-block w-200">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

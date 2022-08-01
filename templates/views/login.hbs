@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container">
+        <img src="github.png" alt="" class="logo">
+        <div class="title" style="color:red">Login Page</div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 form-container">
+                <form action="/login" method="post">
+                    <div class="mb-3">
+                        <label class="col-6 form-label" >Email address</label>
+                        <input type="email" name=textEmail class="form-control" placeholder="Email">
+                    </div>
+                    <br />
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col-6 form-label" style="padding-left: 15px">Password</div>
+                        </div>
+                        <input type="password" name=textPassword class="form-control">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-success btn-lg btn-block w-200">Login</button>
+                    <div class="register">
+                        <p>New User?</p>
+                        <a class="button" href="/html/signup.html">Register</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

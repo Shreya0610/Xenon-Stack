@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.name {
+    padding-left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-bar {
+    margin: 12px 26px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.app {
+    padding: 0px 106px;
+}
